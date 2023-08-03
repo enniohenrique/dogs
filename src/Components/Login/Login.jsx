@@ -9,8 +9,6 @@ import { UserContext } from '../../UserContext';
 const Login = () => {
   const { login } = React.useContext(UserContext);
 
-  console.log('login')
-  console.log(login)
   if (login === true) return <Navigate to="/conta" />;
   return (
     <div>
