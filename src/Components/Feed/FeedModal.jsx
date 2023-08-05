@@ -18,9 +18,6 @@ const FeedModal = ({ photo, setModalPhoto }) => {
     if (event.target === event.currentTarget) {
       setModalPhoto(null);
     }
-    console.log('Target:', event.target);
-    console.log('Current Target:', event.currentTarget);
-    console.log('event', event);
   }
   return (
     <div className={styles.modal} onClick={handleOutSideClick}>
