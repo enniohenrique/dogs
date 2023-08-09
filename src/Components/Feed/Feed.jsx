@@ -45,18 +45,16 @@ const Feed = ({ user }) => {
         />
       ))}
 
-      {infinite == false && user <= 0 ? (
+      {!infinite && !user && (
         <p
           style={{
             textAlign: 'center',
-            padding: '2rem 0px 4rem',
-            color: 'rgb(136, 136, 136)',
+            padding: '2rem 0 4rem 0',
+            color: '#888',
           }}
         >
           Não existem mais postagens.
         </p>
-      ) : (
-        ''
       )}
     </div>
   );
