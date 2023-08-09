@@ -44,6 +44,20 @@ const Feed = ({ user }) => {
           setInfinite={setInfinite}
         />
       ))}
+
+      {infinite == false && user <= 0 ? (
+        <p
+          style={{
+            textAlign: 'center',
+            padding: '2rem 0px 4rem',
+            color: 'rgb(136, 136, 136)',
+          }}
+        >
+          Não existem mais postagens.
+        </p>
+      ) : (
+        ''
+      )}
     </div>
   );
 };
